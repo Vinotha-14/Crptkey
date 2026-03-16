@@ -1,0 +1,90 @@
+/* ATM Background */
+
+.atm-bg{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background: linear-gradient(270deg,#0f172a,#1e3a8a,#0ea5e9,#0f172a);
+background-size:600% 600%;
+
+animation: atmBackground 15s ease infinite;
+}
+
+/* Animated background */
+
+@keyframes atmBackground{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* ATM Screen */
+
+.atm-container{
+
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+
+padding:40px;
+
+border-radius:20px;
+
+width:350px;
+
+text-align:center;
+
+box-shadow:0 0 30px rgba(0,255,255,0.4);
+
+color:white;
+
+}
+
+/* Title */
+
+.atm-container h1{
+
+color:#00e5ff;
+
+text-shadow:0 0 10px #00e5ff;
+
+margin-bottom:10px;
+
+}
+
+/* Buttons */
+
+.home-buttons button{
+
+padding:12px 20px;
+
+margin:10px;
+
+border:none;
+
+border-radius:10px;
+
+background:#06b6d4;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.home-buttons button:hover{
+
+transform:scale(1.1);
+
+background:#22c55e;
+
+box-shadow:0 0 15px #22c55e;
+
+}

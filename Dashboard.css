@@ -1,0 +1,177 @@
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#111;
+font-family:Arial;
+}
+
+/* ATM MACHINE BODY */
+
+.atm-container{
+background:#333;
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,0,0,0.8);
+}
+
+/* SCREEN */
+
+.dashboard-container{
+width:420px;
+padding:30px;
+border-radius:15px;
+background:linear-gradient(to right,#2c5364,#203a43,#0f2027);
+color:white;
+text-align:center;
+}
+
+/* HEADER */
+
+.bank-header h1{
+margin-bottom:5px;
+letter-spacing:2px;
+}
+
+.bank-header p{
+font-size:14px;
+color:#ccc;
+}
+
+/* ATM CARD */
+
+.atm-card{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+border-radius:12px;
+padding:20px;
+margin-top:20px;
+text-align:left;
+color:white;
+}
+
+.card-number{
+font-size:18px;
+letter-spacing:2px;
+margin-top:10px;
+}
+
+.card-user{
+margin-top:5px;
+font-size:14px;
+}
+
+/* BALANCE */
+
+.balance-card{
+background:#ffffff10;
+border-radius:10px;
+padding:20px;
+margin-top:20px;
+}
+
+.balance{
+font-size:28px;
+font-weight:bold;
+color:#00ffcc;
+}
+
+/* SERVICES */
+
+.services{
+margin-top:25px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.services button{
+padding:12px;
+border:none;
+border-radius:8px;
+background:#00c6ff;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+.services button:hover{
+background:#0094cc;
+}
+
+/* LOGOUT */
+
+.logout-btn{
+margin-top:20px;
+padding:10px;
+width:100%;
+border:none;
+border-radius:8px;
+background:#ff4d4d;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* POPUP */
+
+.popup-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.popup-box{
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+}
+
+.withdraw-buttons{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:15px;
+}
+
+.withdraw-buttons button{
+padding:10px;
+background:#2a5298;
+color:white;
+border:none;
+border-radius:6px;
+}
+
+/* MINI STATEMENT */
+
+.statement-box{
+width:320px;
+background:white;
+color:black;
+padding:25px;
+border-radius:10px;
+font-family:monospace;
+}
+
+.thank-text{
+text-align:center;
+margin-top:10px;
+}
+
+.close-btn{
+margin-top:15px;
+width:100%;
+padding:10px;
+border:none;
+border-radius:6px;
+background:#0f2027;
+color:white;
+cursor:pointer;
+}

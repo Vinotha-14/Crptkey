@@ -1,0 +1,26 @@
+.register-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  width: 320px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.3);
+  text-align: center;
+}
+
+.register-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #ffcc00;
+  font-weight: bold;
+}

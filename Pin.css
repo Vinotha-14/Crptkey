@@ -1,0 +1,82 @@
+body{
+background:#0f172a;
+font-family:Arial, Helvetica, sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* PIN Container */
+
+.pin-container{
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+width:320px;
+text-align:center;
+box-shadow:0 0 25px rgba(255,0,255,0.4);
+color:white;
+}
+
+/* PIN Display */
+
+.pin-display{
+background:black;
+padding:15px;
+margin-bottom:20px;
+font-size:24px;
+letter-spacing:12px;
+border-radius:10px;
+color:#00ffcc;
+}
+
+/* Keypad */
+
+.keypad{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+
+.keypad button{
+padding:15px;
+font-size:18px;
+border-radius:10px;
+border:none;
+background:#ff00cc;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.keypad button:hover{
+transform:scale(1.1);
+background:#00c3ff;
+}
+
+/* Special Buttons */
+
+.clear-btn{
+background:red;
+}
+
+.back-btn{
+background:orange;
+}
+
+/* Wrong PIN Shake */
+
+.shake{
+animation:shake 0.4s;
+}
+
+@keyframes shake{
+0%{transform:translateX(0);}
+25%{transform:translateX(-5px);}
+50%{transform:translateX(5px);}
+75%{transform:translateX(-5px);}
+100%{transform:translateX(0);}
+}
